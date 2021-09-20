@@ -15,6 +15,7 @@ In order to run this script, few programs are needed. You can see it in preparat
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade
+```
 
 2.  Install python if you havent already (at least Python 3.6)
 ```bash
