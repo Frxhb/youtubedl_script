@@ -31,19 +31,22 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 
 sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
-5. Clone this git repository:
+
+## Installation
+
+1. Clone this git repository:
 ```bash
 git clone git@github.com:Frxhb/youtube-dl-py-script.git
 ```
-6. cd into cloned directory.
+2. cd into cloned directory.
 ```bash
 cd /path/to/directory
 ```
-7. Change permissions:
+3. Change permissions:
 ```bash
 chmod +x youtube_dl_script.py
 ```
-8. Run script with python:
+4. Run script with python:
 ```bash
 python3 youtube_dl_script.py
 ```
