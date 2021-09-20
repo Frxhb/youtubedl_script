@@ -53,3 +53,7 @@ chmod +x youtube_dl_script.py
 ```bash
 python3 youtube_dl_script.py
 ```
+
+## Note
+
+You will find your files in the same folder where you run the python script.
