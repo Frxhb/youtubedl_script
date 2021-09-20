@@ -31,7 +31,10 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 
 sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
-
+5. Sometimes python3 is a bit buggy, so you need to install python-is-python3:
+```bash
+sudo apt-get install python-is-python3
+```
 ## Installation
 
 1. Clone this git repository:
