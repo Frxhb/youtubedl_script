@@ -1,5 +1,11 @@
 import os
 import time
+
+from functions_youtube import type_abfrage
+from functions_youtube import url_abfrage
+from functions_youtube import download_audio
+from functions_youtube import download_video
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -24,25 +30,15 @@ def main_programm():
             time.sleep(1)
             exit()
 
-    def youtubedl_video():
-        os.system('youtube-dl ' + URL_Abfrage)
-        print("\n\n")
+    type_abfrage
 
-    def youtubedl_audio():
-        os.system('youtube-dl -x --audio-format best ' + URL_Abfrage)
-        print("\n\n")
-
-    URL_Abfrage = input("Which URL? Paste URL and press enter.\n>>> ")
-
-    Type_Abfrage = input("Video [1] or Audio [2] ?\n>>> ")
-
-    if Type_Abfrage == "1":
+    if type_abfrage.Type_Abfrage_func == "1":
         print("Okay, you chosed Video.")
-        youtubedl_video()
+        download_video()
 
-    elif Type_Abfrage == "2":
+    elif type_abfrage.Type_Abfrage_func == "2":
         print("Okay, you chosed Audio.")
-        youtubedl_audio()
+        download_audio()
 
     else:
         print(bcolors.WARNING + "Falsche Eingabe!\n" + bcolors.ENDC)
