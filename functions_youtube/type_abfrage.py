@@ -1,0 +1,1 @@
+Type_Abfrage = input("Video [1] or Audio [2] ?\n>>> ")
