@@ -64,4 +64,3 @@ def all_func_check():
     else:
         time.sleep(1)
         print (bcolors.BOLD + "Okay, we can continue!\n\n" + bcolors.ENDC)
-        time.sleep(2)

@@ -17,8 +17,9 @@ def download_audio_func():
 
     if "https://" in url_var:
         os.system('youtube-dl -x --audio-format best ' + url_var)
-        os.system('mkdir -p ./audio_files')
-        os.system('DUMMY=$(mv ./*.m4a *.webm *.aav *.aac *.wma *.ogg *.wav ./audio_files 2>&1)')
+        os.system('mkdir -p ~/youtubedl_files')
+        os.system('mkdir -p ~/youtubedl_files/audios')
+        os.system('DUMMY=$(mv ./*.m4a *.webm *.aav *.aac *.wma *.ogg *.wav *.opus ~/youtubedl_files/audios 2>&1)')
 
     else:
         print(bcolors.FAIL + "No Valid URL!" + bcolors.ENDC + bcolors.WARNING + " Please check your URL. You typed in:\n\n>>> " + url_var +bcolors.ENDC)

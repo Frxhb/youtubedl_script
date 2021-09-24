@@ -17,8 +17,9 @@ def download_video_func():
 
     if "https://" in url_var:
         os.system('youtube-dl ' + url_var)
-        os.system('mkdir -p ./video_files')
-        os.system('DUMMY=$(mv ./*.mp4 *.webm *.mkv ./video_files 2>&1)')
+        os.system('mkdir -p ~/youtubedl_files')
+        os.system('mkdir -p ~/youtubedl_files/videos')
+        os.system('DUMMY=$(mv ./*.mp4 *.webm *.mkv ~/youtubedl_files/videos 2>&1)')
 
     else:
         print(bcolors.FAIL + "No Valid URL!" + bcolors.ENDC + bcolors.WARNING + " Please check your URL. You typed in:\n\n>>> " + url_var +bcolors.ENDC)

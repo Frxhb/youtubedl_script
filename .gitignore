@@ -23,6 +23,7 @@ __pycache__
 *.m4p
 *.m4v
 *.wmv
+*.opus
 *.qt
 *.flv
 *.swf

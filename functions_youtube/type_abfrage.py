@@ -12,7 +12,7 @@ class bcolors:
 
 def Type_Abfrage():
 
-    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "?\n\n>>> ")
+    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "or " +bcolors.HEADER + "Convert Files [3] " + bcolors.ENDC + "?\n\n>>> ")
 
     if what_type == "1":
         print(bcolors.OKGREEN + "Okay, you chosed Video.\n" + bcolors.ENDC)
@@ -20,6 +20,11 @@ def Type_Abfrage():
         download_video.download_video_func()
 
     elif what_type== "2":
+        print(bcolors.OKBLUE + "Okay, you chosed Audio.\n" + bcolors.ENDC)
+        from functions_youtube import download_audio
+        download_audio.download_audio_func()
+
+    elif what_type== "3":
         print(bcolors.OKBLUE + "Okay, you chosed Audio.\n" + bcolors.ENDC)
         from functions_youtube import download_audio
         download_audio.download_audio_func()
