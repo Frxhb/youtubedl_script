@@ -1,3 +1,4 @@
+import time
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -16,14 +17,14 @@ def Type_Abfrage():
     if what_type == "1":
         print(bcolors.OKGREEN + "Okay, you chosed Video.\n" + bcolors.ENDC)
         from functions_youtube import download_video
-        download_video
+        download_video.download_video_func()
 
     elif what_type== "2":
         print(bcolors.OKBLUE + "Okay, you chosed Audio.\n" + bcolors.ENDC)
         from functions_youtube import download_audio
-        download_audio
+        download_audio.download_audio_func()
 
     else:
-        print(bcolors.FAIL + "Falsche Eingabe!\n" + bcolors.ENDC)
-        from functions_youtube import re_run
-        re_run.re_run_func()
+        print(bcolors.FAIL + "Falsche Eingabe! Quitting program...\n" + bcolors.ENDC)
+        time.sleep(1)
+        exit()

@@ -1,15 +1,21 @@
+"""
+
 import time
 import os
 
 def re_run_func():
+    global ask_re_run
     ask_re_run = input("Re run? Y/n:\n>>> ")
 
     if ask_re_run in ['yes', 'Yes', 'Y', 'y']:
+        clear = lambda: os.system('clear')
         clear()
-        from functions_youtube import type_abfrage
-        type_abfrage.Type_Abfrage()
+        import youtube_dl_script
+        youtube_dl_script.main_programm()
 
     else:
         print("Exiting program...")
         time.sleep(1)
         exit()
+
+"""
