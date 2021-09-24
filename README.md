@@ -21,7 +21,7 @@ sudo apt-get update && sudo apt-get upgrade
 ```bash
 sudo apt-get install python3
 ```
-3. If you havent alreasy curl installed, install curl. I you have, move to step 3.
+3. If you havent already curl installed, install curl. I you have, move to step 4.
 ```bash
 sudo apt-get install curl
 ```
@@ -56,4 +56,5 @@ python3 youtube_dl_script.py
 
 ## Note
 
-You will find your files in the same folder where you run the python script.
+You will find your files in the same folder where you run the python script. <br>
+In /audio or /video files.
