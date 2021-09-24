@@ -42,6 +42,12 @@ def all_func_check():
         else:
             print (bcolors.WARNING + "      ffmpeg isn't installed! ✕\n" + bcolors.ENDC)
 
+    def check_ver_func():
+
+        test = os.popen('youtube-dl --version').read()
+        print("Your youtube-dl version is:\n" + bcolors.OKGREEN + test + bcolors.ENDC + "\n")
+
+
     youtube_dl_check()
     ffmpeg_check()
 
@@ -63,4 +69,5 @@ def all_func_check():
             ("Okay, exiting now...")
     else:
         time.sleep(1)
+        check_ver_func()
         print (bcolors.BOLD + "Okay, we can continue!\n\n" + bcolors.ENDC)

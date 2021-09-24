@@ -15,7 +15,6 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def main_func():
-    from functions_youtube import check_installation
     check_installation.all_func_check()
 
     type_abfrage.Type_Abfrage()
