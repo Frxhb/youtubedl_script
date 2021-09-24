@@ -1,10 +1,5 @@
-import os
 import time
-
-from functions_youtube import type_abfrage
-from functions_youtube import url_abfrage
-from functions_youtube import download_audio
-from functions_youtube import download_video
+import os
 
 class bcolors:
     HEADER = '\033[95m'
@@ -17,32 +12,13 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+from functions_youtube import check_installation
+
 def main_programm():
     clear = lambda: os.system('clear')
-    clear()
-    def re_run():
-        clear()
-        ask_re_run = input("Re run? Y/n:\n>>> ")
-        if ask_re_run in ['yes', 'Yes', 'Y', 'y']:
-            main_programm()
-        else:
-            print("Exiting program...")
-            time.sleep(1)
-            exit()
+    #clear()
 
-    type_abfrage
-
-    if type_abfrage.Type_Abfrage_func == "1":
-        print("Okay, you chosed Video.")
-        download_video()
-
-    elif type_abfrage.Type_Abfrage_func == "2":
-        print("Okay, you chosed Audio.")
-        download_audio()
-
-    else:
-        print(bcolors.WARNING + "Falsche Eingabe!\n" + bcolors.ENDC)
-
-    re_run()
+    from functions_youtube import type_abfrage
+    type_abfrage.Type_Abfrage()
 
 main_programm()
