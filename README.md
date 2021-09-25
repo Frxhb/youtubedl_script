@@ -4,7 +4,7 @@ Python script for youtube-dl
 
 
 - [DISCLAIMER](#Disclaimer)
-- [System-Requirements](#Systemrequirements)
+- [SYSTEM REQUIREMENTS](#system-requirements)
 - [PREPARATION](#Preparation)
 - [INSTALLATION](#Installation)
 - [NOTES](#Notes)
