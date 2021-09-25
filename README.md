@@ -63,7 +63,7 @@ sudo apt-get install python-is-python3
 
 1. Clone this git repository:
 ```bash
-git clone git@github.com:Frxhb/youtube-dl-py-script.git
+git clone https://github.com/Frxhb/youtubedl_script.git
 ```
 2. cd into cloned directory.
 ```bash
