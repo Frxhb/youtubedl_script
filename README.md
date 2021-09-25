@@ -56,5 +56,17 @@ python3 youtube_dl_script.py
 
 ## Note
 
-You will find your files in the same folder where you run the python script. <br>
-In /audio or /video files.
+You will find your files in your users folder e.g.: 
+<br>
+<br>
+```bash
+/home/$USR/youtubedl_files/audios <br>
+```
+
+or <br>
+
+```bash
+/home/$USR/youtubedl_files/videos
+```
+<br> 
+Enjoy!
