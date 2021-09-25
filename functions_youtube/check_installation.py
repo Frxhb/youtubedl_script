@@ -1,6 +1,10 @@
+import os
+import time
+
+from functions_youtube import check_update
+from functions_youtube import check_version
+
 def all_func_check():
-    import os
-    import time
 
     class bcolors:
         HEADER = '\033[95m'
@@ -42,15 +46,8 @@ def all_func_check():
         else:
             print (bcolors.WARNING + "      ffmpeg isn't installed! ✕\n" + bcolors.ENDC)
 
-    def check_ver_func():
-
-        test = os.popen('youtube-dl --version').read()
-        print("Your youtube-dl version is:\n" + bcolors.OKGREEN + test + bcolors.ENDC + "\n")
-
-
     youtube_dl_check()
     ffmpeg_check()
-
 
     if isfile_yt == False or isfile_ffmpeg == False:
 
@@ -69,5 +66,7 @@ def all_func_check():
             ("Okay, exiting now...")
     else:
         time.sleep(1)
-        check_ver_func()
+        check_update.update_func()
+        check_version.check_ver_func()
         print (bcolors.BOLD + "Okay, we can continue!\n\n" + bcolors.ENDC)
+        print ("\n\n")

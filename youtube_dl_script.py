@@ -3,8 +3,9 @@ import os
 from functions_youtube import check_installation
 from functions_youtube import type_abfrage
 
+check_installation.all_func_check()
+
 def main_func():
-    check_installation.all_func_check()
 
     type_abfrage.Type_Abfrage()
 
