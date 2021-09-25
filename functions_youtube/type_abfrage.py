@@ -13,7 +13,7 @@ class bcolors:
 
 def Type_Abfrage():
 
-    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "or " +bcolors.HEADER + "Convert Files [3] " + bcolors.ENDC + "?\n\n>>> ")
+    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "or " +bcolors.OKCYAN + "Playlist [SONGS] [3] " + bcolors.ENDC + bcolors.WARNING + "Playlist [Videos] [4] " + bcolors.ENDC + "?\nChoose a number and press enter!\n\n>>> ")
 
     if what_type == "1":
         print(bcolors.OKGREEN + "Okay, you chosed Video.\n" + bcolors.ENDC)
@@ -26,9 +26,14 @@ def Type_Abfrage():
         download_audio.download_audio_func()
 
     elif what_type== "3":
-        print(bcolors.OKBLUE + "Okay, you chosed Playlist.\n" + bcolors.ENDC)
+        print(bcolors.OKBLUE + "Okay, you chosed Playlist-Audio.\n" + bcolors.ENDC)
         from functions_youtube import download_playlist_audio
         download_playlist_audio.download_playlist_audio_func()
+
+    elif what_type== "4":
+        print(bcolors.OKBLUE + "Okay, you chosed Playlist-Video.\n" + bcolors.ENDC)
+        from functions_youtube import download_playlist_video
+        download_playlist_video.download_playlist_video_func()
 
     else:
         print(bcolors.FAIL + "Falsche Eingabe! Quitting program...\n" + bcolors.ENDC)
