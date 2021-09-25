@@ -17,7 +17,7 @@ In this script I use [Youtube-dl](https://github.com/ytdl-org/youtube-dl).
 ## System requirements?
 Right now I tested this script with [Ubuntu 20.04.3 LTS](https://releases.ubuntu.com/20.04/) and [Debian 10](https://www.debian.org/index.de.html)
 
-In order to run this script, few programs are needed. You can see it in preparation.
+In order to run this script, few programs are needed. You can see it in [PREPARATION](#Preparation).
 
 ## Preparation
 
