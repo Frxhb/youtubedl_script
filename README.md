@@ -2,16 +2,24 @@
 Python script for youtube-dl
 
 
-
+- [DESCRIPTION](#DESCRIPTION)
 - [DISCLAIMER](#Disclaimer)
 - [SYSTEM REQUIREMENTS](#system-requirements)
 - [PREPARATION](#Preparation)
 - [INSTALLATION](#Installation)
 - [NOTES](#Notes)
 
+## Description
+
+You can use this tool to download videos and songs from youtube. <br>
+
+Even Playlists are supported.
+
 
 ## Disclaimer
 In this script I use [Youtube-dl](https://github.com/ytdl-org/youtube-dl).
+<br>
+This script is still in work, so there will be some more features in the future.
 
 
 ## System requirements?
