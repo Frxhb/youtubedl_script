@@ -84,13 +84,13 @@ You will find your files in your users folder e.g.:
 <br>
 <br>
 ```bash
-/home/$USR/youtubedl_files/audios
+cd ~/youtubedl_files/audios
 ```
 
 or <br>
 
 ```bash
-/home/$USR/youtubedl_files/videos
+cd ~/youtubedl_files/videos
 ```
 <br> 
 Enjoy!
