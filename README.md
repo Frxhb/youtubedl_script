@@ -22,8 +22,9 @@ In this script I use [Youtube-dl](https://github.com/ytdl-org/youtube-dl).
 This script is still in work, so there will be some more features in the future.
 
 
-## System requirements?
-Right now I tested this script with [Ubuntu 20.04.3 LTS](https://releases.ubuntu.com/20.04/) and [Debian 10](https://www.debian.org/index.de.html)
+## System requirements
+RIGHT NOW LINUX ONLY!
+I tested this script with [Ubuntu 20.04.3 LTS](https://releases.ubuntu.com/20.04/) , [Debian 10](https://www.debian.org/index.de.html) and [Raspberry Pi OS (32-bit)](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
 
 In order to run this script, few programs are needed. You can see it in [PREPARATION](#Preparation).
 
