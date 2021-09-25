@@ -3,11 +3,11 @@ Python script for youtube-dl
 
 
 
-- [DISCLAIMER](##Disclaimer)
-- [System-Requirements](##Systemrequirements)
-- [PREPARATION](##Preparation)
-- [INSTALLATION](##Installation)
-- [NOTES](##Notes)
+- [DISCLAIMER](#Disclaimer)
+- [System-Requirements](#Systemrequirements)
+- [PREPARATION](#Preparation)
+- [INSTALLATION](#Installation)
+- [NOTES](#Notes)
 
 
 ## Disclaimer
