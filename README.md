@@ -13,6 +13,12 @@ Python script for youtube-dl
 
 You can use this tool to download videos and songs from youtube. <br>
 
+- <br>![Screen1](/screenshots/first_screenshot)
+
+<br>
+
+- <br>![Screen2](/screenshots/screenshot_2)
+
 Even Playlists are supported.
 
 
