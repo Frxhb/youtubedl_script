@@ -1,10 +1,20 @@
 # youtube-dl-py-script
 Python script for youtube-dl
+
+
+
+- [DISCLAIMER](##Disclaimer)
+- [System-Requirements](##Systemrequirements)
+- [PREPARATION](##Preparation)
+- [INSTALLATION](##Installation)
+- [NOTES](##Notes)
+
+
 ## Disclaimer
 In this script I use [Youtube-dl](https://github.com/ytdl-org/youtube-dl).
 
 
-## Where does this script work?
+## System requirements?
 Right now I tested this script with [Ubuntu 20.04.3 LTS](https://releases.ubuntu.com/20.04/) and [Debian 10](https://www.debian.org/index.de.html)
 
 In order to run this script, few programs are needed. You can see it in preparation.
@@ -54,13 +64,13 @@ chmod +x youtube_dl_script.py
 python3 youtube_dl_script.py
 ```
 
-## Note
+## Notes
 
 You will find your files in your users folder e.g.: 
 <br>
 <br>
 ```bash
-/home/$USR/youtubedl_files/audios <br>
+/home/$USR/youtubedl_files/audios
 ```
 
 or <br>
