@@ -26,9 +26,9 @@ def Type_Abfrage():
         download_audio.download_audio_func()
 
     elif what_type== "3":
-        print(bcolors.OKBLUE + "Okay, you chosed Audio.\n" + bcolors.ENDC)
-        from functions_youtube import download_audio
-        download_audio.download_audio_func()
+        print(bcolors.OKBLUE + "Okay, you chosed Playlist.\n" + bcolors.ENDC)
+        from functions_youtube import download_playlist_audio
+        download_playlist_audio.download_playlist_audio_func()
 
     else:
         print(bcolors.FAIL + "Falsche Eingabe! Quitting program...\n" + bcolors.ENDC)
