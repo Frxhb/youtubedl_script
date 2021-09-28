@@ -13,7 +13,7 @@ class bcolors:
 
 def Type_Abfrage():
 
-    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "or " +bcolors.OKCYAN + "Playlist [SONGS] [3] " + bcolors.ENDC + bcolors.WARNING + "Playlist [Videos] [4] " + bcolors.ENDC + "?\nChoose a number and press enter!\n\n>>> ")
+    what_type = input(bcolors.OKGREEN + "Video [1] " +bcolors.ENDC + "or " +bcolors.OKBLUE + "Audio [2] " + bcolors.ENDC + "or " +bcolors.OKCYAN + "Playlist [SONGS] [3] " + bcolors.ENDC + bcolors.WARNING + "Playlist [Videos] [4] " + bcolors.ENDC + "?\n\nChoose a number and press enter!\n\n>>> ")
 
     if what_type == "1":
         print(bcolors.OKGREEN + "Okay, you chosed Video.\n" + bcolors.ENDC)

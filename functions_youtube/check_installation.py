@@ -3,6 +3,23 @@ import time
 
 from functions_youtube import check_update
 from functions_youtube import check_version
+from functions_youtube import check_os
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+clear = lambda: os.system('clear')
+clear()
+
+check_os.check_os_func()
 
 def all_func_check():
 
@@ -16,9 +33,6 @@ def all_func_check():
         ENDC = '\033[0m'
         BOLD = '\033[1m'
         UNDERLINE = '\033[4m'
-
-    clear = lambda: os.system('clear')
-    clear()
 
     print(bcolors.HEADER + "Checking dependencies.....\n" + bcolors.ENDC)
     time.sleep(1)
@@ -56,8 +70,6 @@ def all_func_check():
             print (bcolors.OKGREEN + "      curl is installed! ✓\n" +bcolors.ENDC)
         else:
             print (bcolors.WARNING + "      curl isn't installed! ✕\n" + bcolors.ENDC)
-
-    
 
     youtube_dl_check()
     ffmpeg_check()
