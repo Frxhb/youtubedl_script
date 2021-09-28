@@ -63,7 +63,7 @@ def all_func_check():
     ffmpeg_check()
     curl_check()
 
-    if isfile_yt == False or isfile_ffmpeg == False:
+    if isfile_yt == False or isfile_ffmpeg == False or isfile_curl == False:
 
         print ("In order to run this program, you need to download a few more dependencies:\n ")
 
@@ -73,9 +73,16 @@ def all_func_check():
 
             if isfile_yt == False:
                 os.system("sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl")
-
-            if isfile_ffmpeg == False:
+                print("\n\n")
+                
+            elif isfile_ffmpeg == False:
                 os.system("sudo apt-get install ffmpeg")
+                print("\n\n")
+            
+            elif isfile_curl == False:
+                os.system("sudo apt-get install curl")
+                print("\n\n")
+
         else:
             ("Okay, exiting now...")
     else:
