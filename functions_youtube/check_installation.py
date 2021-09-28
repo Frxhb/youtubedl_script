@@ -31,9 +31,9 @@ def all_func_check():
 
         if isfile_yt == True:
             
-            print (bcolors.OKGREEN + "      Youtube dl is installed! ✓\n" +bcolors.ENDC)
+            print (bcolors.OKGREEN + "      youtube dl is installed! ✓\n" +bcolors.ENDC)
         else:
-            print (bcolors.WARNING + "      Youtube-dl isn't installed! ✕\n" +bcolors.ENDC)
+            print (bcolors.WARNING + "      youtube-dl isn't installed! ✕\n" +bcolors.ENDC)
 
     def ffmpeg_check():
 
@@ -46,8 +46,22 @@ def all_func_check():
         else:
             print (bcolors.WARNING + "      ffmpeg isn't installed! ✕\n" + bcolors.ENDC)
 
+    def curl_check():
+
+        path_curl = "/usr/bin/curl"
+        global isfile_curl
+        isfile_curl = os.path.isfile(path_curl)
+
+        if isfile_curl == True:
+            print (bcolors.OKGREEN + "      curl is installed! ✓\n" +bcolors.ENDC)
+        else:
+            print (bcolors.WARNING + "      curl isn't installed! ✕\n" + bcolors.ENDC)
+
+    
+
     youtube_dl_check()
     ffmpeg_check()
+    curl_check()
 
     if isfile_yt == False or isfile_ffmpeg == False:
 
