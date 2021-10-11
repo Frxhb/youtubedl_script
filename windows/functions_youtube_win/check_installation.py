@@ -1,9 +1,9 @@
 import os
 import time
 
-from functions_youtube import check_update
-from functions_youtube import check_version
-from functions_youtube import check_os
+from windows.functions_youtube_win import check_update
+from windows.functions_youtube_win import check_version
+from windows.functions_youtube_win import check_os
 
 class bcolors:
     HEADER = '\033[95m'

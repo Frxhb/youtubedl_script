@@ -17,22 +17,22 @@ def Type_Abfrage():
 
     if what_type == "1":
         print(bcolors.OKGREEN + "Okay, you chosed Video.\n" + bcolors.ENDC)
-        from functions_youtube import download_video
+        from functions_youtube_linux import download_video
         download_video.download_video_func()
 
     elif what_type== "2":
         print(bcolors.OKBLUE + "Okay, you chosed Audio.\n" + bcolors.ENDC)
-        from functions_youtube import download_audio
+        from functions_youtube_linux import download_audio
         download_audio.download_audio_func()
 
     elif what_type== "3":
         print(bcolors.OKBLUE + "Okay, you chosed Playlist-Audio.\n" + bcolors.ENDC)
-        from functions_youtube import download_playlist_audio
+        from functions_youtube_linux import download_playlist_audio
         download_playlist_audio.download_playlist_audio_func()
 
     elif what_type== "4":
         print(bcolors.OKBLUE + "Okay, you chosed Playlist-Video.\n" + bcolors.ENDC)
-        from functions_youtube import download_playlist_video
+        from functions_youtube_linux import download_playlist_video
         download_playlist_video.download_playlist_video_func()
 
     else:

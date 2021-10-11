@@ -1,7 +1,7 @@
-from functions_youtube import check_installation
-from functions_youtube import type_abfrage
-from functions_youtube import move_audios
-from functions_youtube import move_videos
+from windows.functions_youtube_win import check_installation
+from windows.functions_youtube_win import type_abfrage
+from windows.functions_youtube_win import move_audios
+from windows.functions_youtube_win import move_videos
 
 check_installation.all_func_check()
 
@@ -28,3 +28,4 @@ def main_func():
         exit()
 
 main_func()
+#call main_func
