@@ -19,8 +19,6 @@ class bcolors:
 clear = lambda: os.system('clear')
 clear()
 
-check_os.check_os_func()
-
 def all_func_check():
 
     class bcolors:
