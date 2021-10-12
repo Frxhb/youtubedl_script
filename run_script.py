@@ -3,6 +3,7 @@ import re
 import time
 import platform
 from x_styles.bcolor import bcolors
+from linux import youtube_dl_script_linux
 
 os_name = platform.system()
 
@@ -24,7 +25,7 @@ if re.compile('|'.join(search_list_win),re.IGNORECASE).search(os_name):
 elif re.compile('|'.join(search_list_linux),re.IGNORECASE).search(os_name):
     print(bcolors.OKGREEN + "Your system seems to be Linux." + bcolors.ENDC)
     time.sleep(2)
-    from linux import youtube_dl_script_linux
+    youtube_dl_script_linux
 else:
     print(bcolors.FAIL + "Error!\nClosing program now..." + bcolors.ENDC)
     time.sleep(2)
