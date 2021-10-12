@@ -17,8 +17,10 @@ search_list_linux = ['Linux' , 'linux']
 
 if re.compile('|'.join(search_list_win),re.IGNORECASE).search(os_name):
     print(bcolors.OKGREEN + "Your system seems to be Windows." + bcolors.ENDC)
-    time.sleep(2)
-    from windows import youtube_dl_script_win
+    time.sleep(1)
+    print (bcolors.WARNING + "Windows is not yet supported. Closing program now..." + bcolors.ENDC)
+    time.sleep(1)
+    exit()
 elif re.compile('|'.join(search_list_linux),re.IGNORECASE).search(os_name):
     print(bcolors.OKGREEN + "Your system seems to be Linux." + bcolors.ENDC)
     time.sleep(2)
